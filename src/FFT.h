@@ -1,0 +1,17 @@
+#pragma once
+#ifndef FFT_H
+#define FFT_H
+
+#include "Complex.h"
+
+#include <vector>
+
+////////////////////////////////////////////////////////////////
+// FFT
+////////////////////////////////////////////////////////////////
+
+inline Complex omega(int k, int n);
+
+void fft_1d(std::vector<Complex>& in);
+
+#endif // !MY_FFT_H
