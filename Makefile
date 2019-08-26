@@ -16,3 +16,6 @@ $(TARGETS): $(OBJECTS)
 
 $(BIN)/%.o: $(SRC)/%.cpp $(HEADERS)
 	$(CC) $(CXXFLAGS) -c -o $@ $<
+
+clean:
+	rm -rf $(OBJECTS) $(TARGETS)
